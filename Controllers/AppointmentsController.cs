@@ -50,7 +50,7 @@ namespace MIS4200_hm433314.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AppointmentID,AppointmentDate,AppointmentReason,DoctorID,PatientID")] Appointment appointment)
+        public ActionResult Create([Bind(Include = "AppointmentID,AppointmentDate,AppointmentReason,AppointmentMedication,DoctorID,PatientID")] Appointment appointment)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MIS4200_hm433314.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AppointmentID,AppointmentDate,AppointmentReason,DoctorID,PatientID")] Appointment appointment)
+        public ActionResult Edit([Bind(Include = "AppointmentID,AppointmentDate,AppointmentReason,AppointmentMedication,DoctorID,PatientID")] Appointment appointment)
         {
             if (ModelState.IsValid)
             {

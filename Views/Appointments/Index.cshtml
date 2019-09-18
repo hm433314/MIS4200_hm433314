@@ -23,6 +23,9 @@
         <th>
             @Html.DisplayNameFor(model => model.AppointmentReason)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointmentMedication)
+        </th>
         <th></th>
     </tr>
 
@@ -39,6 +42,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AppointmentReason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointmentMedication)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.AppointmentID }) |

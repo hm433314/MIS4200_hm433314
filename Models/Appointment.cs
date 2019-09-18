@@ -11,6 +11,8 @@ namespace MIS4200_hm433314.Models
      
      public DateTime AppointmentDate{ get; set; }
      public string AppointmentReason{ get; set; }
+
+        public string AppointmentMedication { get; set; }
      
      public int DoctorID { get; set; }   
      public virtual Doctor Doctor { get; set; }

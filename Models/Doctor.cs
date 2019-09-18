@@ -13,6 +13,13 @@ namespace MIS4200_hm433314.Models
         public string DEmail { get; set; }
         public string DPhone { get; set; }
 
+        public string DFullName { get
+            {
+                return DLName + "," + DFName;
+            }
+
+        }
+
         public ICollection<Appointment> Appointment { get; set; }
     }
 }
