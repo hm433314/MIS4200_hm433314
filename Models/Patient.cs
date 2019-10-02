@@ -29,6 +29,7 @@ namespace MIS4200_hm433314.Models
         [Required(ErrorMessage ="Patient Phone is Required")]
         public string PPhone { get; set; }
 
+        [Display(Name ="Patient Name")]
         public string PFullName { get
             {
                 return PLName + "," + PFName;

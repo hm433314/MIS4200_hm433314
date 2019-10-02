@@ -30,6 +30,7 @@ namespace MIS4200_hm433314.Models
         [Required(ErrorMessage = "Doctor Phone Number is Required")]
         public string DPhone { get; set; }
 
+        [Display(Name = "Doctor Name")]
         public string DFullName { get
             {
                 return DLName + "," + DFName;
