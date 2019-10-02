@@ -10,9 +10,12 @@ namespace MIS4200_hm433314.Models
     {[Key] public int AppointmentID { get; set; }
      
      [Display (Name ="Appointment Date")]
+     [Required(ErrorMessage ="Appointment Date is Required")]
      public DateTime AppointmentDate{ get; set; }
 
      [Display(Name = "Appointment Reason")]
+     [Required]
+     [StringLength(100)]
       public string AppointmentReason{ get; set; }
 
      [Display(Name = "Appointment Medication")]
